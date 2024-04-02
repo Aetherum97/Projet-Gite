@@ -28,3 +28,6 @@
 .nav-link:hover::after {
     opacity: 1;
 }
+
+.navbar-collapse {
+}
