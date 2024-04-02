@@ -1,0 +1,70 @@
+*{
+    /*border: 1px solid black;*/
+    
+}
+
+body{
+    background-color: lavender;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    background-image: url(/images/hotel\ room\ header.webp);
+    background-size:cover;
+    background-position: center;
+    justify-content: space-between;
+    
+}
+
+header div, nav{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+header div h1{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    color: white;
+}
+
+main{
+    width: 768px;
+    margin: auto;
+    background-color: white;
+}
+
+#search-bar{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#rooms h2{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding-bottom: 40px;
+}
+
+#rooms-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.room-presentation{
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 10px;
+
+}
+
+footer{
+    height: 100px;
+}
