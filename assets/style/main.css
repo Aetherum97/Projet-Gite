@@ -29,5 +29,13 @@
     opacity: 1;
 }
 
-.navbar-collapse {
+.nav-item {
+    text-align: center;
 }
+
+nav{
+    backdrop-filter: blur(10px);
+}
+
+
+
