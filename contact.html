@@ -3,49 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Présentation gîte</title>
+    <title>Contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
      rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/style/main.css">
+    <link rel="stylesheet" href="assets/style/contact.css">
 </head>
 <body>
     <header>
         <nav>
 
         </nav>
-        <h1 class="text-center">Contact</h1>
+        <span id="titre" class="text-center">
+            <h1>Contact</h1>
+        </span>
     </header>
     <main class="container">
         <div class="row">
-            <form class="col-md-8 col-lg-6 border" id="formulaire">
-                <div class="name">
-                    <input type="text" id="name" value="Nom et Prénom" name="name">
-                </div>
-                <div class="mail">
-                    <input type="mail" id="mail" value="Email" name="mail">
-                </div>
-                <div class="tel">
-                    <input type="tel" id="tel" value="Téléphone mobile" name="tel">
-                    <input type="tel" id="telFixe" value="Téléphone fixe" name="telFixe">
-                </div>
-                <div class="adress">
-                    <input type="text" id="adress" value="Adresse">
-                    <input type="text" id="codePost-City" value="Code postal et Ville">
-                </div>
-                <div class="select">
-                    <select name="select" id="select">
-                        <option selected value="réserver">Faire une réservation</option>
-                        <option value="activités">Activités aux alentours</option>
-                        <option value="Gite">Renseignements sur notre Gite</option>
-                        <option value="animaux">Animaux domestiques</option>
-                    </select>
-                </div>
-                <div class="textAera">
-                    <textarea name="textArea" id="textAera" cols="30" rows="4">Laissez-nous un message !</textarea>
+            <form class="col-md-12 col-lg-6 shadow-lg" id="formulaire">
+                <div class="row g-3">
+                    <div class="col-md-12">
+                        <label class="form-label mt-2" for="nom" for="Prénom">Nom et Prénom</label>
+                        <div class="nomPrenom">
+                            <input class="form-control shadow" type="text" id="nom" name="nom" value="">
+                            <input class="form-control shadow" type="text" id="prénom" name="prénom" value="">
+                        </div>
+                    </div>
+                    <div class="col-md-12 mt-2">
+                        <label class="form-label mt-2" for="mail">Email</label>
+                        <input class="form-control shadow" type="mail" id="mail" name="mail" value="">
+                    </div>
+                    <div class="col-md-12 mt-2">
+                        <label class="form-label mt-2" for="tel">Téléphone</label>
+                        <div class="tel">
+                            <input class="form-control shadow" type="tel" id="mobile" name="mobile" placeholder="Mobile" value="">
+                            <input class="form-control shadow" type="tel" id="fixe" name="fixe" placeholder="Fixe" value="">
+                        </div>
+                    </div>
+                    <div class="col-md-12 mt-2">
+                        <label class="form-label mt-2" for="adresse" for="adresse cp ville">Adresse</label>
+                        <input class="form-control shadow" type="text" id="adresse" placeholder="Adresse" value="">
+                        <div  class="cpVille">
+                            <input class="form-control shadow" type="text" id="cp" placeholder="CP" value="">
+                            <input class="form-control shadow" type="text" id="ville" placeholder="Ville" value="">
+                        </div>
+                    </div>
+                    <div class="col-md-12 mt-2">
+                        <label class="form-label mt-2" for="message">Message</label>
+                        <textarea class="form-control shadow" name="textArea" id="textAera" cols="30" rows="4"></textarea>
+                    </div>
+                    <div class="col-md-12 ">
+                        <button class="btn btn-primary mt-2 mb-2">Envoyer</button>
+                    </div>
                 </div>
             </form>
-            <div class="col-md-4 col-lg-6 border" id="map">
-
+            <div class="col-md-12 col-lg-6" id="map">
+                <iframe class="shadow-lg" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d45992.10414403014!2d5.16283392839604!3d43.90748658777429!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12ca0dc30dc4b6cd%3A0x6cf8370fce926027!2s84220%20Gordes!5e0!3m2!1sfr!2sfr!4v1712143283317!5m2!1sfr!2sfr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
     </main>

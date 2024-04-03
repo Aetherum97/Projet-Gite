@@ -1,3 +1,10 @@
+/* <uniquifier>: Use a unique and descriptive class name
+    <weight>: Use a placeholder from 200 to 1000 */
+
+* {
+  font-family: "Nunito", sans-serif;
+}
+
 body {
     background-color: rgb(192,174,180);
     /* background-color: rgb(177,150,153); */
@@ -13,10 +20,99 @@ header {
     background-position: center;
     width: 100vw;
     height: 12rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:end;
+}
+
+span #titre {
+    display: flex;
+}
+
+h1 {
+    color: #ffff;
+    font-size: 400%;
+    text-shadow: 5px -5px 10px rgb(255, 255, 255, 1);
 }
 
 footer {
     width: 100%;
     height: 5rem;
     background-color: rgb(210,204,190);
+}
+
+#formulaire {
+    margin-top: 1rem;
+    margin-bottom: 1rem
+}
+
+#map {
+    margin-top: 1rem;
+    margin-bottom: 1rem
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.tel {
+    display: flex;
+    flex-direction: row;
+}
+
+.tel input[placeholder="Mobile"] {
+    margin-right: 0.25rem;
+}
+
+.tel input[placeholder="Fixe"] {
+    margin-left: 0.25rem;
+}
+
+.nomPrenom {
+    display: flex;
+    flex-direction: row;
+}
+
+.nomPrenom input[name="prénom"] {
+    margin-left: 0.25rem;
+}
+
+.nomPrenom input[name="nom"] {
+    margin-right: 0.25rem;
+}
+
+.cpVille {
+    display: flex;
+    flex-direction: row;
+}
+
+.cpVille input[placeholder="CP"] {
+    width: 35%;
+    margin: 0.7rem 0.25rem 0 0;
+}
+
+.cpVille input[placeholder="Ville"] {
+    width: 65%;
+    margin: 0.7rem 0 0 0.25rem;
+}
+
+button {
+    width: 7rem;
+    box-shadow: 5px -5px 10px rgb(255, 255, 255, 0.7);
+}
+
+
+@media screen and (max-width:992px) {
+    #formulaire {
+        margin-top: 1rem;
+        margin-bottom: 0;
+    }
+    
+    #map {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        padding: 0;
+    }
 }
