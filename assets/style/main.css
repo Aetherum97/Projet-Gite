@@ -1,3 +1,20 @@
+* {
+    font-family: "Nunito", sans-serif;
+}
+
+nav{
+    backdrop-filter: blur(10px);
+}
+
+li {
+    font-size: 1.7rem;
+}
+
+.logo {
+    background-color: white;
+    border-radius: 3rem;
+    width: 6rem;
+}
 .bg-img {
     height: 100vh;
     width: 100vw;
@@ -30,12 +47,21 @@
 }
 
 .nav-item {
+    margin-left: 3rem;
     text-align: center;
 }
 
-nav{
-    backdrop-filter: blur(10px);
+#content {
+    margin-top: 25rem;
+    width: 40rem;
 }
 
+.card-content {
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+}
 
-
+.card-text{
+    font-size: 30px;
+    color: lavender;
+}
