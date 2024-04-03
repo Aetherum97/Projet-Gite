@@ -38,17 +38,13 @@ main{
 }
 
 #search-bar{
-    height: 150px;
+    height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    
+    flex-direction: column;    
 }
 
-#rooms{
-    padding: 40px 0;
-}
 
 #rooms h2{
     display: flex;
@@ -58,6 +54,18 @@ main{
 
 .card{
     margin: 20px;
+}
+
+#reservation-box h2{
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+
+#reservation-table{
+    margin: 20px 40px;
+    padding-bottom: 70px;
 }
 
 footer{
