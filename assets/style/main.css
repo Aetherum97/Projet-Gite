@@ -52,8 +52,8 @@ li {
 }
 
 #content {
-    margin-top: 25rem;
-    width: 40rem;
+    margin-top: 22rem;
+    width: 30rem;
 }
 
 .card-content {
@@ -64,4 +64,11 @@ li {
 .card-text{
     font-size: 30px;
     color: lavender;
+}
+
+@media screen and (max-width: 480px) {
+    #content {
+        margin-top: 22rem;
+        width: 20rem;
+    }
 }
