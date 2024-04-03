@@ -43,13 +43,14 @@ main{
     background-color: rgb(115, 186, 219);
 }
 .container{
+   
      margin-top: 40px; 
      margin-bottom: 40px; 
     background-color: rgb(115, 186, 219);
     
 }
 .row{
-
+  
     margin-top: 15px;
     
     
@@ -65,7 +66,15 @@ footer{
     text-align:center;
     
 }
-
+li
+{
+    list-style: none;
+    justify-content: left;
+}
+ #nos-services
+ {
+    display: flex;
+ }
 
   
   .social-links a {
