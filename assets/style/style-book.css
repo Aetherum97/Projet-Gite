@@ -1,0 +1,113 @@
+*{
+    /*border: 1px solid black;*/
+    font-family: "Nunito", sans-serif;
+}
+
+body{
+    background-color: lavender;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    background-image: url(/images/hotel\ room\ header.webp);
+    background-size:cover;
+    background-position: center;
+    justify-content: space-between;
+}
+
+header div, nav{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+header div h1{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    color: white;
+    padding-bottom: 40px;
+}
+
+main{
+    max-width: 1000px;
+    margin: auto;
+    background-color: white;
+}
+
+#search-bar{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;    
+}
+
+#search-bar button{
+    margin-top: 5px;
+}
+
+
+#rooms h2{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+
+.card{
+    margin: 20px;
+}
+
+#reservation-box h2{
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+
+#reservation-table{
+    margin: 20px 40px;
+    padding-bottom: 70px;
+}
+
+footer{
+    display: flex;
+    justify-content:center;
+    padding-top: 10px;
+    padding-bottom: 40px;
+    background-color: lightblue;
+    text-align:center;
+    flex-direction: column;
+}
+
+footer p{
+    padding-top: 20px;
+}
+
+.social-links a {
+    color: white; 
+    text-decoration: none;
+    margin: 0 10px; 
+  }
+
+  .social-links img {
+    width: 30px; 
+    height: 30px; 
+    margin: 0 5px; 
+    margin-top: 30px;
+    align-items: middle; 
+  }
+
+@media (max-width: 768px){
+    #search-bar{
+        height: 300px;
+    }
+    #search-bar button{
+        float: right;
+    }
+    .col-hide{
+        display: none;
+    }
+}
