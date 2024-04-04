@@ -1,6 +1,6 @@
 *{
     /*border: 1px solid black;*/
-    
+    font-family: "Nunito", sans-serif;
 }
 
 body{
@@ -45,6 +45,10 @@ main{
     flex-direction: column;    
 }
 
+#search-bar button{
+    margin-top: 5px;
+}
+
 
 #rooms h2{
     display: flex;
@@ -69,5 +73,41 @@ main{
 }
 
 footer{
-    height: 100px;
+    display: flex;
+    justify-content:center;
+    padding-top: 10px;
+    padding-bottom: 40px;
+    background-color: lightblue;
+    text-align:center;
+    flex-direction: column;
+}
+
+footer p{
+    padding-top: 20px;
+}
+
+.social-links a {
+    color: white; 
+    text-decoration: none;
+    margin: 0 10px; 
+  }
+
+  .social-links img {
+    width: 30px; 
+    height: 30px; 
+    margin: 0 5px; 
+    margin-top: 30px;
+    align-items: middle; 
+  }
+
+@media (max-width: 768px){
+    #search-bar{
+        height: 300px;
+    }
+    #search-bar button{
+        float: right;
+    }
+    .col-hide{
+        display: none;
+    }
 }
