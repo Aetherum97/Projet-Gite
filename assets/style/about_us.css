@@ -1,0 +1,93 @@
+*{
+    font-family: "Nunito", sans-serif;
+}
+
+
+header{
+    background-image: url('assets\images\about-us-bg.jpg');
+    background-size: cover; /* Ensure the image covers the entire header */
+    background-position: center; /* Center the background image */
+    height: 200px; /* Adjust the height as needed */
+    text-align: center; /* Center text horizontally */
+    color:rgb(20, 20, 19); /* Text color */
+    padding-top: 50px;
+    padding-bottom: 50px;
+     text-align: center;
+     color:rgb(245, 245, 240);
+     background-color: lightblue;
+     font-family:Arial, Helvetica, sans-serif;
+     font-size: normal;
+     
+ }
+ .custom-column {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+ body{
+    background-color: rgb(244, 244, 245);
+}
+
+main{
+    /* margin-top: 30px; */
+    /* padding-bottom: 30px; */
+    background-color: rgb(250, 241, 231);
+    display: flex;
+    justify-content: space-evenly;
+    color: rgb(20, 20, 19);
+    font-size: small;
+    /* background-color: rgb(225, 176, 240); */
+}
+.col-md-6
+{
+    background-color: rgb(115, 186, 219);
+}
+.container{
+   
+     margin-top: 40px; 
+     margin-bottom: 40px; 
+    background-color: rgb(115, 186, 219);
+    
+}
+.row{
+  
+    margin-top: 15px;
+    
+    
+}
+footer{
+    display: flex;
+    justify-content:center;
+    align-items: flex-end;
+   padding-top: 10px;
+   padding-bottom: 40px;
+  
+    background-color: lightblue;
+    text-align:center;
+    
+}
+li
+{
+    list-style: none;
+    justify-content: left;
+}
+ #nos-services
+ {
+    display: flex;
+ }
+
+  
+  .social-links a {
+    color: white; 
+    text-decoration: none;
+    margin: 0 10px; 
+  }
+
+  
+  .social-links img {
+    width: 30px; 
+    height: 30px; 
+    margin: 0 5px; 
+    margin-top: 30px;
+    align-items: middle; 
+  }
