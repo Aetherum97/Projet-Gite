@@ -19,6 +19,10 @@ header{
      font-size: normal;
      
  }
+ #heading{
+
+    padding-top: 80px;
+ }
  .custom-column {
     border: 1px solid #ddd;
     padding: 15px;
@@ -43,7 +47,7 @@ main{
     background-color: rgb(115, 186, 219);
 }
 .container{
-   
+  
      margin-top: 40px; 
      margin-bottom: 40px; 
     background-color: rgb(115, 186, 219);
@@ -51,9 +55,14 @@ main{
 }
 .row{
   
-    margin-top: 15px;
+    margin-top: 10px;
+   
     
     
+}
+.custom-column{
+
+    border-radius: 25px;
 }
 footer{
     display: flex;
@@ -66,16 +75,13 @@ footer{
     text-align:center;
     
 }
+
 li
 {
     list-style: none;
     justify-content: left;
 }
- #nos-services
- {
-    display: flex;
- }
-
+ 
   
   .social-links a {
     color: white; 
