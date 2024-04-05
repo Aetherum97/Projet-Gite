@@ -1,0 +1,263 @@
+/* <uniquifier>: Use a unique and descriptive class name
+    <weight>: Use a placeholder from 200 to 1000 */
+
+* {
+  font-family: "Nunito", sans-serif;
+}
+
+body {
+    background-color: rgb(192,174,180);
+    /* background-color: rgb(177,150,153); */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header {
+    background-image: url("/assets/images/photo-plume-lettre.avif");
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 12rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:end;
+}
+
+span #titre {
+    display: flex;
+}
+
+h1 {
+    color: #ffff;
+    font-size: 400%;
+    text-shadow: 0px 5px 7px rgb(255, 255, 255, 0.75);
+}
+
+#formulaire {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+}
+
+input[placeholder=""] {
+    background-color: rgb(251, 246, 241);
+}    
+input[placeholder="Mobile"] {
+    background-color: rgb(251, 246, 241);
+}    
+input[placeholder="Fixe"] {
+    background-color: rgb(251, 246, 241);
+}    
+input[placeholder="Adresse"] {
+    background-color: rgb(251, 246, 241);
+}    
+input[placeholder="CP"] {
+    background-color: rgb(251, 246, 241);
+}    
+input[placeholder="Ville"] {
+    background-color: rgb(251, 246, 241);
+}    
+textarea[placeholder=""] {
+    background-color: rgb(251, 246, 241);
+}
+
+input[placeholder=""]:hover {
+    background-color: #ffff;
+}    
+input[placeholder="Mobile"]:hover {
+    background-color: #ffff;
+}    
+input[placeholder="Fixe"]:hover {
+    background-color: #ffff;
+}    
+input[placeholder="Adresse"]:hover {
+    background-color: #ffff;
+}    
+input[placeholder="CP"]:hover {
+    background-color: #ffff;
+}    
+input[placeholder="Ville"]:hover {
+    background-color: #ffff;
+}
+textarea[placeholder=""]:hover {
+    background-color: #ffff;
+}
+
+#map {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.nomPrenom {
+    display: flex;
+    flex-direction: row;
+}
+
+.nomPrenom input[name="prénom"] {
+    margin-left: 0.25rem;
+}
+
+.nomPrenom input[name="nom"] {
+    margin-right: 0.25rem;
+}
+
+.tel {
+    display: flex;
+    flex-direction: row;
+}
+
+.tel input[placeholder="Mobile"] {
+    margin-right: 0.25rem;
+}
+
+.tel input[placeholder="Fixe"] {
+    margin-left: 0.25rem;
+}
+
+.cpVille {
+    display: flex;
+    flex-direction: row;
+}
+
+.cpVille input[placeholder="CP"] {
+    width: 35%;
+    margin: 0.7rem 0.25rem 0 0;
+}
+
+.cpVille input[placeholder="Ville"] {
+    width: 65%;
+    margin: 0.7rem 0 0 0.25rem;
+}
+
+button {
+    width: 7rem;
+    box-shadow: 5px -5px 10px rgb(255, 255, 255, 0.7);
+}
+
+footer{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    text-align:center;   
+    width: 100%;
+    height: 5rem;
+    background-color: rgb(210,204,190);
+}
+
+#footer {
+    margin: 0;
+    padding: 0;
+}
+
+.social-links {
+    margin: 0;
+    padding: 0;
+}
+
+.social-links a {
+    text-decoration: none;
+    margin: 0 10px; 
+}
+  
+.social-links img {
+    width: 30px; 
+    height: 30px; 
+    margin: 0 7px;
+    align-items: middle;
+}
+
+footer P {
+    color: white;
+    font-size: small;
+    margin: 8px 0 0 0;
+    padding: 0;
+}
+
+@media screen and (max-width:992px) {   
+    span #titre {
+        display: flex;
+    }   
+    h1 {
+        font-size: 400%;
+    }    
+    #formulaire {
+        margin-top: 1rem;
+        margin-bottom: 0;
+    } 
+    #map {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        padding: 0;
+        min-height: 400px;
+    }
+    footer{
+        height: auto;
+    }
+    #footer {
+        margin: 7px 0 7px 0;
+    }
+    .social-links img {
+        width: 20px; 
+        height: 20px; 
+        margin: 0 5px 0 0;
+    }
+    footer P {
+        font-size: 10px;
+        margin: 3px 0 0 0;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width:767px) {       
+    h1 {
+        font-size: 250%;
+    }
+    .nomPrenom {
+        display: block;
+    }      
+    .nomPrenom input[name="nom"] {
+        margin-right: 0;
+    }
+    .nomPrenom input[name="prénom"] {
+        margin-left: 0;
+        margin: 0.7rem 0 0 0;
+    }    
+    .tel {
+        display: block;
+    }
+    .tel input[placeholder="Mobile"] {
+        margin-right: 0;
+    }
+    .tel input[placeholder="Fixe"] {
+        margin-left: 0;
+        margin: 0.7rem 0 0 0;
+    }
+    .cpVille {
+        display: block;
+    }
+    .cpVille input[placeholder="CP"] {
+        width: 100%;
+        margin: 0.7rem 0 0 0;
+    }   
+    .cpVille input[placeholder="Ville"] {
+        width: 100%;
+        margin: 0.7rem 0 0 0;
+    }         
+    #map {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        padding: 0;
+    }
+    .social-links img {
+        margin: 0 3px;
+    }
+}
